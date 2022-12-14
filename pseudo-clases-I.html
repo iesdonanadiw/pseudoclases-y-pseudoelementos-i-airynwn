@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pseudo-clases</title>
   <style>
-    :not(h1) {
+    body :not(h1) {
       color: #369;
     }
 
@@ -14,19 +14,19 @@
       border: solid black 1px;
     }
 
-    p:first-child {
-      color: red;
+    input:focus {
+      background: lightblue;
     }
 
-    form:active {
-      background-color: lightblue;
-    }
-
-    input:default + label {
-      color: coral;
+    input[type="radio"]:default {
+      box-shadow: 0 0 2px 2px coral;
     }
     
-    input:valid {
+    input[type="radio"]:default + label {
+      color: coral;
+    }
+
+    input:in-range {
       border-color: greenyellow;
     }
 
